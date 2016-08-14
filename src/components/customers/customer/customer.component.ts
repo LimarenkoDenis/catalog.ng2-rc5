@@ -1,13 +1,20 @@
-import { Component, Input } from '@angular/core';
-import { ROUTER_DIRECTIVES, Router } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'customer',
   template: require('./customer.html')
 })
 
-export class CustomerComponent{
+export class CustomerComponent implements OnInit{
   @Input()
-  customers: any;
+  customers = {}
   customer: any;
+  constructor(private router: Router){}
+  ngOnInit(){
+  	console.log(this.customers);
+  }
+  gotoDetail(id:string) {
+    this.router.navigate(['/customers', id]);
+  }
 }
