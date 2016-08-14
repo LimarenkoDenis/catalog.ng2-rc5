@@ -5,5 +5,5 @@ import './../public/css/styles.css';
   template: require('./app.html')
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'Catalog';
 }

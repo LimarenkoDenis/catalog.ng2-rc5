@@ -7,7 +7,6 @@ import { AppComponent }   from './app.component';
 import { routing }        from './app.routing';
 
 import { HeroesComponent }      from './hero/heroes.component';
-import { DashboardComponent }   from './dashboard/dashboard.component'
 import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { CustomersListComponent }  from './customers/customers-list/customers-list.component.ts';
 
@@ -26,7 +25,6 @@ import { CustomersService }        from './customers/customers.service';
   declarations: [
     AppComponent,
     HeroesComponent,
-    DashboardComponent,
     HeroDetailComponent,
     CustomersListComponent
   ],

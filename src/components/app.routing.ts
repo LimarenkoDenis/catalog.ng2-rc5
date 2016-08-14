@@ -1,6 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { DashboardComponent }  from './dashboard/dashboard.component';
 import { HeroesComponent }     from './hero/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { CustomersListComponent }  from './customers/customers-list/customers-list.component.ts';
@@ -8,12 +7,8 @@ import { CustomersListComponent }  from './customers/customers-list/customers-li
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/heroes',
     pathMatch: 'full'
-  },
-  {
-    path: 'dashboard',
-    component: DashboardComponent
   },
   {
     path: 'detail/:id',
