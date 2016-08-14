@@ -1,0 +1,80 @@
+{
+  "developers":[
+    {
+      "id": 1,
+      "name": "dan",
+      "lastname": "Doudu",
+      "sex": "male",
+      "email": "Danir@gmail.com",
+      "phone": "380253345",
+      "birth": "1995-08-27",
+      "photo": "../../../public/img/a2.jpg",
+      "title": "PHP developer",
+      "skiils": [
+        "php", "js", "html"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dima",
+      "lastname": "Churko",
+      "sex": "male",
+      "email": "Churko@gmail.com",
+      "phone": "211324",
+      "birth": "1978-08-30",
+      "photo": "../../../public/img/a2.jpg",
+      "title": "Front-end developer",
+      "skiils": [
+        "php", "js", "html", "css", "less"
+      ]
+    }
+  ],
+  "customers":[
+    {
+      "id": 1,
+      "firstName": "Bob",
+      "lastName": "Nilay",
+      "country": "USA",
+      "timeZone": 3,
+      "sex": "male",
+      "email": "BobNilay@gmail.com",
+      "phone": "38093553345",
+      "birth": "1990-08-27",
+      "photo": "../../../public/img/a2.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Nick",
+      "lastName": "Nick",
+      "country": "Canada",
+      "timeZone": -5,
+      "sex": "male",
+      "email": "NickNick@gmail.com",
+      "phone": "38093553345",
+      "birth": "1990-08-27",
+      "photo": "../../../public/img/a2.jpg"
+    }
+  ],
+  "projects":[
+    {
+      "id": 1,
+      "title": "Google project",
+      "description": "loermfdsf lorem lorem ipson color",
+      "status": "active",
+      "version": 1.2,
+      "start": "2016-07-15",
+      "deadline": "2017-06-08",
+      "price": 12000
+    },
+    {
+      "id": 2,
+      "title": "Apple project",
+      "description": "loermfdsf lorem lorem ipson color",
+      "status": "active",
+      "version": 1.0,
+      "start": "2013-07-15",
+      "deadline": "2018-06-08",
+      "price": 10000
+    }
+  ]
+}
