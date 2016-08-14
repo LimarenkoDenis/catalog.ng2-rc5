@@ -8,7 +8,9 @@ import { routing }        from './app.routing';
 
 import { DevelopersComponent }      from './developers/developer/developer.component';
 import { DeveloperDetailComponent }  from './developers/developer-detail/developer-detail.component';
+
 import { CustomersListComponent }  from './customers/customers-list/customers-list.component.ts';
+import { CustomerDetailComponent }  from './customers/customer-detail/customer-detail.component.ts';
 
 
 import { DevelopersService }        from './developers/developers.service';
@@ -26,7 +28,8 @@ import { CustomersService }        from './customers/customers.service';
     AppComponent,
     DevelopersComponent,
     DeveloperDetailComponent,
-    CustomersListComponent
+    CustomersListComponent,
+    CustomerDetailComponent
   ],
   providers: [
     DevelopersService,
