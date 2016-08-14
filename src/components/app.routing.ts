@@ -1,22 +1,22 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { HeroesComponent }     from './heroes/hero/heroes.component';
-import { HeroDetailComponent } from './heroes/hero-detail/hero-detail.component';
+import { DevelopersComponent }      from './developers/developer/developer.component';
+import { DeveloperDetailComponent }  from './developers/developer-detail/developer-detail.component';
 import { CustomersListComponent }  from './customers/customers-list/customers-list.component.ts';
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/heroes',
+    redirectTo: '/developers',
     pathMatch: 'full'
   },
   {
     path: 'detail/:id',
-    component: HeroDetailComponent
+    component: DeveloperDetailComponent
   },
   {
-    path: 'heroes',
-    component: HeroesComponent
+    path: 'developers',
+    component: DevelopersComponent
   },
   {
     path: 'customers',

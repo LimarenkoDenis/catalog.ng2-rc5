@@ -6,12 +6,12 @@ import { HttpModule }     from '@angular/http';
 import { AppComponent }   from './app.component';
 import { routing }        from './app.routing';
 
-import { HeroesComponent }      from './heroes/hero/heroes.component';
-import { HeroDetailComponent }  from './heroes/hero-detail/hero-detail.component';
+import { DevelopersComponent }      from './developers/developer/developer.component';
+import { DeveloperDetailComponent }  from './developers/developer-detail/developer-detail.component';
 import { CustomersListComponent }  from './customers/customers-list/customers-list.component.ts';
 
 
-import { HeroService }        from './heroes/hero.service';
+import { DevelopersService }        from './developers/developers.service';
 import { CustomersService }        from './customers/customers.service';
 
 
@@ -24,12 +24,12 @@ import { CustomersService }        from './customers/customers.service';
   ],
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
+    DevelopersComponent,
+    DeveloperDetailComponent,
     CustomersListComponent
   ],
   providers: [
-    HeroService,
+    DevelopersService,
     CustomersService
   ],
   bootstrap: [ AppComponent ]
