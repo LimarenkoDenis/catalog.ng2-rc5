@@ -6,7 +6,7 @@ import { ROUTER_DIRECTIVES, Router } from '@angular/router';
   template: require('./customer.html')
 })
 
-export class CustomerComponent {
+export class CustomerComponent{
   @Input()
   customers: any;
   customer: any;

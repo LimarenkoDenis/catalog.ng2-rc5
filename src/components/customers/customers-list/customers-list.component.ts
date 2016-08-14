@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { CustomersService } from '../customers.service';
+import { CustomerComponent } from './../customer/customer.component';
+
 
 @Component({
     selector: 'customers-list',
     template: require('./customers-list.html'),
     providers: [CustomersService],
+    directives: [CustomerComponent]
 })
 
 export class CustomersListComponent {
