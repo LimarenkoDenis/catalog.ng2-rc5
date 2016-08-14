@@ -12,9 +12,7 @@ export class DevelopersComponent implements OnInit {
   developers: Developer[];
   selectedDev: Developer;
 
-  constructor(
-    private router: Router,
-    private DevelopersService: DevelopersService) { }
+  constructor(private router: Router, private DevelopersService: DevelopersService) { }
 
   getDevelopers() {
     this.DevelopersService.getDevelopers().then(developers => this.developers = developers);

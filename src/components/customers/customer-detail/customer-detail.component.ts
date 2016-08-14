@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CustomersService } from '../customers.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'customer-detail',
@@ -10,7 +11,7 @@ import { CustomersService } from '../customers.service';
 export class CustomerDetailComponent {
   customer = {};
   private sub: any;
-  constructor(private CustomersService: CustomersService){}
+  constructor(private CustomersService: CustomersService,  private route: ActivatedRoute){}
 
   detail(id:string) {
     this.CustomersService.detail(id)
@@ -21,11 +22,10 @@ export class CustomerDetailComponent {
   }
 
   ngOnInit(){
-    // this.sub = this.route
-    //   .params
-    //   .subscribe( params => {
-    //     let id = params['id'];
-    //     this.detail(id);
-    //   });
+    this.sub = this.route.params
+      .map(params => params['id'])
+      .subscribe((id) => {
+          this.detail(id);
+        });
   }
 }
